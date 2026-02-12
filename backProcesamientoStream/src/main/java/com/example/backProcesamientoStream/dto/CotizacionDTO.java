@@ -1,10 +1,10 @@
 package com.example.backProcesamientoStream.dto;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import java.time.LocalDate;
 
 @Data
@@ -27,13 +27,11 @@ public class CotizacionDTO {
     private String tipoCalculo;
     private Integer consecutivoCalCotizacion;
     private LocalDate fechaInicioVigencia;
-
-    // Campos de la tabla causales
     private Long causalId;
     private String causal;
     private String estadoActual;
     private String estadoSiguiente;
     private String observacion;
-    private String tipoCambioAutomatico;
+    private Boolean tipoCambioAutomatico; // <-- ahora es Boolean
     private String codigoEstadoCausal;
 }

@@ -18,7 +18,7 @@ public class CotizacionController {
     @Value("${csv.default.page:0}")
     private int defaultPage;
 
-    @Value("${csv.default.size:100}")
+    @Value("${csv.default.size:2000}")
     private int defaultSize;
 
     @Value("${csv.auto.paginate:true}")
